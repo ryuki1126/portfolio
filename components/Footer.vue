@@ -1,10 +1,7 @@
 <template>
 <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
   <div class="grid grid-flow-col gap-4">
-    <a class="link link-hover hover:text-purple-500">About us</a> 
-    <a class="link link-hover hover:text-purple-500">Contact</a> 
-    <a class="link link-hover hover:text-purple-500">Jobs</a> 
-    <a class="link link-hover hover:text-purple-500">Press kit</a>
+    <a v-for="item in menuList" :key="item" class="link link-hover hover:text-purple-500">{{ item }}</a> 
   </div> 
   <div>
     <div class="grid grid-flow-col gap-4">
@@ -18,3 +15,16 @@
   </div>
 </footer>
 </template>
+
+<script>
+export default {
+  props: {
+  menuList: {
+    type: [
+      Array,
+      Object
+    ]
+  }
+}
+}
+</script>
