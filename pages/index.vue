@@ -3,7 +3,7 @@
     <Header />
     <Top />
     <div class="w-10/12 mx-auto">
-      <h1>hello</h1>
+      <About />
     </div>
     <Footer />
   </div>
@@ -14,6 +14,7 @@ export default {
   components: {
     Header: () => import('~/components/Header'),
     Top: () => import('~/components/Top'),
+    About: () => import('~/components/About'),
     Footer: () => import('~/components/Footer'),
   },
 }
