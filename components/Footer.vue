@@ -19,12 +19,12 @@
 <script>
 export default {
   props: {
-  menuList: {
-    type: [
-      Array,
-      Object
-    ]
+    menuList: {
+      type: [
+        Array,
+        Object
+      ]
+    }
   }
-}
 }
 </script>
