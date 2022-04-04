@@ -1,9 +1,9 @@
 <template>
     <div class="w-10/12 pt-4 pb-8 mx-auto">
-    <h3 class="text-center text-white text-3xl font-bold">WORKS</h3>
+    <h3 class="text-center dark:text-white text-3xl font-bold">WORKS</h3>
     <div class="w-20 h-1 mt-2 mx-auto bg-green-500"></div>
     <div class="pt-12 flex justify-center flex-wrap">
-      <div class="card card-side bg-base-100 shadow-xl m-2">
+      <div class="card card-side bg-base-100 shadow-xl m-3">
         <figure><img src="https://api.lorem.space/image/movie?w=200&h=280" alt="Movie"></figure>
         <div class="card-body">
           <h2 class="card-title">New movie is released!</h2>
@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <div class="card card-side bg-base-100 shadow-xl m-2">
+      <div class="card card-side bg-base-100 shadow-xl m-3">
         <figure><img src="https://api.lorem.space/image/movie?w=200&h=280" alt="Movie"></figure>
         <div class="card-body">
           <h2 class="card-title">New movie is released!</h2>
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <div class="card card-side bg-base-100 shadow-xl m-2">
+      <div class="card card-side bg-base-100 shadow-xl m-3">
         <figure><img src="https://api.lorem.space/image/movie?w=200&h=280" alt="Movie"></figure>
         <div class="card-body">
           <h2 class="card-title">New movie is released!</h2>

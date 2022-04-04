@@ -1,7 +1,7 @@
 <template>
 <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
   <div class="grid grid-flow-col gap-4">
-    <a v-for="item in menuList" :key="item" class="link link-hover hover:text-purple-500">{{ item }}</a> 
+    <a v-for="item in menuList" :key="item" :href="item.href" class="link link-hover hover:text-purple-500">{{ item.title }}</a> 
   </div> 
   <div>
     <div class="grid grid-flow-col gap-4">

@@ -3,9 +3,10 @@
     <Header 
       :menu-list='menuList'
     />
-    <Top id="top" />
-    <About id="about" />
-    <Works id="works" />
+    <Top :id="menuList[0].id" />
+    <About :id="menuList[1].id" />
+    <Skills :id="menuList[2].id" />
+    <Works :id="menuList[3].id" />
     <Footer 
       :menu-list='menuList'
     />
@@ -18,15 +19,33 @@ export default {
     Header: () => import('~/components/Header'),
     Top: () => import('~/components/Top'),
     About: () => import('~/components/About'),
+    Skills: () => import('~/components/Skills'),
     Works: () => import('~/components/Works'),
     Footer: () => import('~/components/Footer'),
   },
   data() {
     return {
       menuList: [
-        'About Me',
-        'Skills',
-        'Works'
+        {
+          title: 'Top',
+          id: 'top',
+          href: '#top'
+        },
+        {
+          title: 'About Me',
+          id: 'about',
+          href: '#about'
+        },
+        {
+          title: 'Skills',
+          id: 'skills',
+          href: '#skills'
+        },
+        {
+          title: 'Works',
+          id: 'works',
+          href: '#works'
+        }
       ]
     }
   }
