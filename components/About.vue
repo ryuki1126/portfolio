@@ -12,6 +12,10 @@
           <li>職業 : webエンジニア</li>
           <li>趣味 : ドライブ、ポケモン</li>
         </ul>
+        <div class="mt-4 text-center">
+          <a href="https://github.com/ryuki1126" target="_blank"><i class="text-4xl mdi mdi-github" /></a>
+          <a href="https://github.com/ryuki1126" target="_blank"><i class="text-4xl mdi mdi-email" /></a>
+        </div>
       </div>
     </div>
   </div>
