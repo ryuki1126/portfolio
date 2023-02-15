@@ -31,8 +31,9 @@
               <p>{{ this.workData.knowledge }}</p>
             </div>
             <div class="my-8">
-              <p class="text-lg font-bold">Githubリポジトリ</p>
+              <p class="text-lg font-bold">外部リンク</p>
               <a v-if="this.workData.github !== null" :href="this.workData.github" target="_blank"><i class="text-4xl mdi mdi-github" /></a>
+              <a v-if="this.workData.siteLink !== null" :href="this.workData.siteLink" target="_blank"><i class="text-4xl mdi mdi-application-outline ml-2" /></a>
               <p v-if="this.workData.github === null">機密のため公開できません🙇‍♂️</p>
             </div>
           </label>

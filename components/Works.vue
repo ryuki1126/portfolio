@@ -34,6 +34,7 @@ export default {
           ],
           knowledge: 'グラフ描画をリアクティブにする実装で沼りました。状態管理やエラー耐性、認証機能など、基本的な技術を身につけました。また、このアプリの開発で初めてAWSを利用したので、インフラの知識が身につきました。',
           github: null,
+          siteLink: null,
           imageLink: require('~/assets/image/nuxtjs.png')
         },
         {
@@ -53,6 +54,7 @@ export default {
           ],
           knowledge: '簡単なDB構造ではありますが、リレーションを意識したDB構築を学びました。',
           github: 'https://github.com/ryuki1126/bms_api',
+          siteLink: null,
           imageLink: require('~/assets/image/nodejs.jpg')
         },
         {
@@ -67,6 +69,7 @@ export default {
           ],
           knowledge: 'Next.js製のアプリをVercelでデプロイする便利さを知りました…！',
           github: 'https://github.com/ryuki1126/next.js-microblog',
+          siteLink: 'https://next-js-microblog-re2pk0lnb-ryuki1126.vercel.app',
           imageLink: require('~/assets/image/nextjs.png')
         },
       ]
