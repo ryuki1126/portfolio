@@ -1,12 +1,14 @@
 <template>
-  <div>
+  <div class=" bg-slate-300">
     <Header 
       :menu-list='menuList'
     />
     <Top :id="menuList[0].id" />
-    <About :id="menuList[1].id" />
-    <Skills :id="menuList[2].id" />
-    <Works :id="menuList[3].id" />
+    <div class="w-10/12 mx-auto bg-base-200 shadow-md">
+      <About :id="menuList[1].id" />
+      <Skills :id="menuList[2].id" />
+      <Works :id="menuList[3].id" />
+    </div>
     <Footer 
       :menu-list='menuList'
     />

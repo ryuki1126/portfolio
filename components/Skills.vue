@@ -1,18 +1,66 @@
 <template>
-  <div class="w-10/12 pt-4 pb-8 mx-auto">
+  <div class="pt-16 pb-40">
     <h3 class="text-center dark:text-white text-3xl font-bold">SKILLS</h3>
     <div class="w-20 h-1 mt-2 mx-auto bg-green-500"></div>
-    <div class="pt-12 flex justify-center">
-      <div>
-        <img class="mask mask-hexagon-2" src="https://api.lorem.space/image/shoes?w=160&h=160" />
-        <ul class="pt-4 dark:text-white text-lg font-bold">
-          <li>名前 : 山本竜輝</li>
-          <li>誕生日 : 1996/11/26</li>
-          <li>居住地 : 大阪</li>
-          <li>職業 : webエンジニア</li>
-          <li>趣味 : ドライブ、ポケモン</li>
-        </ul>
+    <div class="pt-32 flex justify-center">
+      <div class="w-4/5">
+        <div class="flex justify-center flex-wrap">
+          <SkillCard v-for="skill in skills" :key="skill.name" :skillData="skill" />
+        </div>
+        <div class="pt-20 pl-20 text-sm">
+          <p>自信についてはあくまで自信です。実力との乖離がある可能性がございます💦<br>予めご了承ください🙇‍♂️</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  components: {
+    SkillCard: () => import('~/components/parts/SkillCard.vue'),
+  },
+  data() {
+    return {
+      skills: [
+        {
+          name: 'node.js',
+          span: '2',
+          confidence: '凄くあります！',
+          imageLink: require('~/assets/image/nodejs.jpg')
+        },
+        {
+          name: 'nuxt.js',
+          span: '1',
+          confidence: 'あります！',
+          imageLink: require('~/assets/image/nuxtjs.png')
+        },
+        {
+          name: 'nextjs',
+          span: '0.5',
+          confidence: 'ちょっとあります…！',
+          imageLink: require('~/assets/image/nextjs.png')
+        },
+        {
+          name: 'php',
+          span: '1',
+          confidence: 'あります！',
+          imageLink: require('~/assets/image/php.png')
+        },
+        {
+          name: 'python',
+          span: '2',
+          confidence: 'あります！',
+          imageLink: require('~/assets/image/python.png')
+        },
+        {
+          name: 'aws',
+          span: '1',
+          confidence: 'ちょっとあります…！',
+          imageLink: require('~/assets/image/aws.jpeg')
+        },
+      ]
+    }
+  }
+}
+</script>
